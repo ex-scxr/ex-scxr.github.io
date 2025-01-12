@@ -1,0 +1,126 @@
+/* General Body Styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+    padding: 20px; /* Add space around the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Content Wrapper for Markdown-Rendered Content */
+.content-wrapper {
+    width: 100%; /* Ensure it spans full width of the viewport */
+    max-width: 800px; /* Limit the content width for better readability */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 10px; /* Add internal spacing */
+    background-color: #ffffff; /* Maintain a clean background */
+    border-radius: 8px; /* Round corners for aesthetics */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Heading Styles */
+h1, h2 {
+    text-align: center; /* Center headings */
+    margin: 20px 0;
+    color: #E81899; /* Accent color for headings */
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.6; /* Improve readability */
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+
+}
+
+/* Links */
+a {
+    color: #0C101B;
+    text-decoration: none;
+    font-weight: bold; /* Make links bold */
+    text-decoration: none; /* Remove underline */
+    background-color: #E81899;; /* Add a subtle highlight */
+    padding: 2px 4px; /* Add padding around the text for better visibility */
+    border-radius: 3px; /* Slightly round the corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+
+}
+
+
+a:hover {
+    text-decoration: underline;
+    color: #0C101B;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .content-wrapper {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
