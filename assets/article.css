@@ -2,76 +2,138 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #ffffff;
-    color: #000;
+    color: #000000;
     margin: 0;
-    padding: 20px; /* Add space around the content */
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden; 
 }
 
 /* Content Wrapper for Markdown-Rendered Content */
 .content-wrapper {
-    width: 100%; /* Ensure it spans full width of the viewport */
-    max-width: 800px; /* Limit the content width for better readability */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 10px; /* Add internal spacing */
-    background-color: #ffffff; /* Maintain a clean background */
-    border-radius: 8px; /* Round corners for aesthetics */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    width: 100%;
+    max-width: 750px;
+    margin: 30px auto 0 auto; /* Space above the content wrapper */
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-sizing: border-box;
 }
 
 /* Heading Styles */
-h1, h2 {
-    text-align: center; /* Center headings */
-    margin: 20px 0;
-    color: #E81899; /* Accent color for headings */
-}
-
 h1 {
+    text-align: center;
+    margin: 20px 0;
     font-size: 2em;
+    font-family:'Courier New', Courier, monospace ;
+    text-decoration: underline;
+    text-decoration-color: #E81899;
+    font-weight: lighter;
+
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    text-decoration-color: #E81899;
+
 }
+
+h4 {
+    text-align: center;
+    color: #292929;
+}
+
+header {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;}
 
 header img {
     width: 150px;
     height: auto;
 }
 
+header h1 {
+    font-size: 2em;
+    color: #E81899;
+    font-weight: normal;
+    margin: 10px 0;
+    text-decoration: none;
+
+}
+
+/* Reset link styles inside the header */
+header a {
+    color: inherit; /* Inherit color from the parent */
+    font-weight: normal; /* Remove bold style */
+    background-color: transparent; /* Remove background highlight */
+    padding: 0; /* Remove padding */
+    text-decoration: none; /* Remove underline */
+}
+
+header a:hover {
+    text-decoration: none; /* Prevent underline on hover */
+    color: inherit; /* Maintain original color */
+}
+
 /* Paragraph Styling */
 p {
-    line-height: 1.6; /* Improve readability */
-    margin: 10px 0;
-    text-align: center;
+    line-height: 1.6;
+    margin: 30px 0;
+    text-align:justify ;
+    font-size: 1.2em;
 }
 
 /* Images */
 img {
-    max-width: 100%; /* Ensure images are responsive */
+    max-width: 100%;
     height: auto;
     margin: 10px 0;
     border-radius: 5px;
-
 }
+
+.blurred-title-container {
+    position: relative; /* Establish a positioning context for child elements */
+    width: 100%; /* Make it full width */
+    max-height: 400px; /* Optional: Limit the height of the container */
+    overflow: hidden; /* Hide overflowing parts of the image */
+}
+
+.blurred-background {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    filter: blur(10px); /* Apply the blur effect */
+    object-fit: cover; /* Ensure the image scales nicely */
+    opacity: 0.6; 
+}
+
+.blurred-title {
+    position: absolute; /* Position relative to the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Align the text to the center */
+    font-size: 2.5em; /* Adjust font size */
+    text-align: center; /* Center align the text */
+    padding: 0 20px; /* Optional: Add padding for smaller screens */
+    z-index: 1; /* Ensure it sits above the image */
+    width: 80%;
+}
+
 
 /* Links */
 a {
-    color: #0C101B;
-    text-decoration: none;
-    font-weight: bold; /* Make links bold */
-    text-decoration: none; /* Remove underline */
-    background-color: #E81899;; /* Add a subtle highlight */
-    padding: 2px 4px; /* Add padding around the text for better visibility */
-    border-radius: 3px; /* Slightly round the corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
-
+    color: #E81899;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
 }
-
 
 a:hover {
     text-decoration: underline;
@@ -82,10 +144,18 @@ a:hover {
 ul {
     padding-left: 20px;
     list-style-type: disc;
+    font-size: 1.2em;
+}
+
+li::marker
+{
+    color: #E81899;
+    font-size: 1.2em; 
 }
 
 li {
     margin-bottom: 10px;
+    font-size: 1.2em;
 }
 
 /* Footer */

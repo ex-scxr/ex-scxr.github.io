@@ -1,7 +1,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #ffffff;
-    color: #000;
+    color: #0C101B;
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,6 +19,15 @@ header {
 header img {
     width: 150px;
     height: auto;
+
+}
+
+.new-indicator {
+    height: 1em; 
+    width: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 a {

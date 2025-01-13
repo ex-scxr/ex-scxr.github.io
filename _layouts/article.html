@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="{{ 'assets/article.css' | relative_url }}">
 </head>
 <body>
+    <header>
+        <a href="{{ 'index.html' | relative_url }}">
+            <img src="{{ 'assets/logo.webp' | relative_url }}" alt="Logo" class="header">
+        </a>
+        <h1>gwyneth.info</h1>
+        <nav>
+            <a href="{{ 'research.html' | relative_url }}">research </a>|
+            <a href="https://github.com/taikoxyz/gwyneth/">github </a>|
+            <a href="https://twitter.com/gwyneth_taiko" title="Not calling it X">twitter </a>|
+            <a href="https://discord.gg/taikoxyz">discord</a>
+        </nav>
+    </header>
     <div class="content-wrapper">
         {{ content }}
     </div>
+    <footer>
+        <p>&copy; this is a personal project. made with ❤ for a better web3.</p>
+    </footer>
 </body>
 </html>
