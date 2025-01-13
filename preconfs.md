@@ -8,6 +8,8 @@ permalink: /research/preconfs/
     <h1 class="blurred-title">{{ page.title }}</h1>
 </div>
 #### Written by:**[Cecilia Zhang](https://x.com/ceciliaz030)**
+#### January 4th, 2025
+
 2025 is bound to be a year of consumer-facing experience. Meanwhile, infrastructure should center around apps as we see examples like Unichain and Hyperliquid. It's reaffirmed that being fast and cheap remains the No. 1 principle of UX.
 
 We want to deliver the best UX through the base layer while preserving decentralization and neutrality to the greatest extent. Throughout 2024, the developer community has focused on preconfirmation—a feature that achieves this purpose once the base layer ecosystem matures.
