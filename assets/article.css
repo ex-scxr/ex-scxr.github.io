@@ -1,6 +1,35 @@
+@font-face {
+    font-family: 'prime';
+    src: url('./fonts/CourierPrime-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal weight */
+    font-style: normal; /* Regular style */
+}
+
+@font-face {
+    font-family: 'prime';
+    src: url('./fonts/CourierPrime-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+    font-style: normal; /* Regular style */
+}
+
+@font-face {
+    font-family: 'prime';
+    src: url('./fonts/CourierPrime-Italic.ttf') format('truetype');
+    font-weight: 400; /* Normal weight */
+    font-style: italic; /* Italic style */
+}
+
+@font-face {
+    font-family: 'prime';
+    src: url('./fonts/CourierPrime-BoldItalic.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+    font-style: italic; /* Italic style */
+}
+
+
 /* General Body Styling */
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: prime;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
@@ -15,7 +44,7 @@ body {
 /* Content Wrapper for Markdown-Rendered Content */
 .content-wrapper {
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
     margin: 30px auto 0 auto; /* Space above the content wrapper */
     padding: 10px;
     background-color: #ffffff;
@@ -28,10 +57,10 @@ h1 {
     text-align: center;
     margin: 20px 0;
     font-size: 2em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: prime;
     text-decoration: underline;
     text-decoration-color: #E81899;
-    font-weight: lighter;
+    font-weight: bold;
     word-wrap: break-word; /* Prevent title overflow on small screens */
 }
 
@@ -39,11 +68,10 @@ h2 {
     font-size: 2em;
     text-decoration: underline;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
+    font-family: prime ;
     text-decoration-color: #E81899;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 2em;
+    margin-bottom: 3px;
 }
 
 h4 {
@@ -65,7 +93,7 @@ header img {
 header h1 {
     font-size: 2em;
     color: #E81899;
-    font-weight: normal;
+    font-weight: lighter;
     margin: 10px 0;
     text-decoration: none;
 }
@@ -88,7 +116,7 @@ header a:hover {
 p {
     line-height: 1.6;
     margin: 30px 0;
-    text-align: justify; /* Default justification for desktop */
+    text-align: left; /* Default justification for desktop */
     font-size: 1.2em;
 }
 
