@@ -145,7 +145,6 @@ a:hover {
 ul {
     padding-left: 20px;
     list-style-type: disc;
-    font-size: 1.2em;
 }
 
 li::marker {
