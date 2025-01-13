@@ -3,10 +3,10 @@ layout: article
 title: Preconfirmations for the Average Joe
 permalink: /research/preconfs/
 ---
-<div class="blurred-title-container">
-    <img src="{{ 'assets/images/preconfs/Ggc_B4Ha8AAySzQ.jpg' | relative_url }}" alt="Article Image" class="blurred-background">
-    <h1 class="blurred-title">{{ page.title }}</h1>
+<div class="title-container">
+    <h1 class="title">{{ page.title }} ⚡️</h1>
 </div>
+
 #### Written by:**[Cecilia Zhang](https://x.com/ceciliaz030)**
 #### January 4th, 2025
 

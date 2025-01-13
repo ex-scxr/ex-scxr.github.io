@@ -100,31 +100,27 @@ img {
     border-radius: 5px;
 }
 
-.blurred-title-container {
-    position: relative;
-    width: 100%;
-    max-height: 400px;
-    overflow: hidden;
+.title-container {
+    width: 100%; /* Full width */
+    max-height: 200px; /* Set a height for the container */
+    display: flex; /* Enable flexible alignment */
+    align-items: center; /* Vertically center the title */
+    justify-content: center; /* Horizontally center the title */
+/* Optional: Add a solid background color */
+    border-radius: 30px; /* Optional: Add rounded corners */
+    padding: 20px; /* Add spacing inside the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
 
-.blurred-background {
-    width: 100%;
-    height: auto;
-    filter: blur(10px);
-    object-fit: cover;
-    opacity: 0.6; 
-}
-
-.blurred-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2.5em;
-    text-align: center;
-    padding: 0 20px;
-    z-index: 1;
-    width: 80%;
+/* Title Styling */
+.title {
+    font-size: 2.5em; /* Adjust font size */
+    text-align: center; /* Center-align text */
+; /* Make the text visible */
+    line-height: 1.2; /* Adjust line spacing */
+    padding: 0 20px; /* Prevent the title from touching the edges */
+    word-wrap: break-word; /* Ensure long words break properly */
+    width: 80%; /* Constrain the title within bounds */
 }
 
 /* Links */
