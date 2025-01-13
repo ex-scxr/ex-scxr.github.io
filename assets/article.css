@@ -28,11 +28,11 @@ h1 {
     text-align: center;
     margin: 20px 0;
     font-size: 2em;
-    font-family:'Courier New', Courier, monospace ;
+    font-family: 'Courier New', Courier, monospace;
     text-decoration: underline;
     text-decoration-color: #E81899;
     font-weight: lighter;
-
+    word-wrap: break-word; /* Prevent title overflow on small screens */
 }
 
 h2 {
@@ -42,7 +42,8 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
     text-decoration-color: #E81899;
-
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 h4 {
@@ -52,11 +53,13 @@ h4 {
 
 header {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;}
+    font-family: 'Courier New', Courier, monospace;
+}
 
 header img {
     width: 150px;
     height: auto;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -65,28 +68,27 @@ header h1 {
     font-weight: normal;
     margin: 10px 0;
     text-decoration: none;
-
 }
 
 /* Reset link styles inside the header */
 header a {
-    color: inherit; /* Inherit color from the parent */
-    font-weight: normal; /* Remove bold style */
-    background-color: transparent; /* Remove background highlight */
-    padding: 0; /* Remove padding */
-    text-decoration: none; /* Remove underline */
+    color: inherit;
+    font-weight: normal;
+    background-color: transparent;
+    padding: 0;
+    text-decoration: none;
 }
 
 header a:hover {
-    text-decoration: none; /* Prevent underline on hover */
-    color: inherit; /* Maintain original color */
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Paragraph Styling */
 p {
     line-height: 1.6;
     margin: 30px 0;
-    text-align:justify ;
+    text-align: justify; /* Default justification for desktop */
     font-size: 1.2em;
 }
 
@@ -99,32 +101,31 @@ img {
 }
 
 .blurred-title-container {
-    position: relative; /* Establish a positioning context for child elements */
-    width: 100%; /* Make it full width */
-    max-height: 400px; /* Optional: Limit the height of the container */
-    overflow: hidden; /* Hide overflowing parts of the image */
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
 }
 
 .blurred-background {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Maintain aspect ratio */
-    filter: blur(10px); /* Apply the blur effect */
-    object-fit: cover; /* Ensure the image scales nicely */
+    width: 100%;
+    height: auto;
+    filter: blur(10px);
+    object-fit: cover;
     opacity: 0.6; 
 }
 
 .blurred-title {
-    position: absolute; /* Position relative to the container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Align the text to the center */
-    font-size: 2.5em; /* Adjust font size */
-    text-align: center; /* Center align the text */
-    padding: 0 20px; /* Optional: Add padding for smaller screens */
-    z-index: 1; /* Ensure it sits above the image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 1;
     width: 80%;
 }
-
 
 /* Links */
 a {
@@ -147,8 +148,7 @@ ul {
     font-size: 1.2em;
 }
 
-li::marker
-{
+li::marker {
     color: #E81899;
     font-size: 1.2em; 
 }
@@ -168,29 +168,78 @@ footer {
 
 /* Responsive Adjustments */
 @media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
     .content-wrapper {
         padding: 15px;
     }
 
+    header img {
+        width: 120px; /* Scale down logo */
+    }
+
     h1 {
         font-size: 1.8em;
+        margin: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-top: 15px;
+    }
+
+    p {
+        font-size: 1.1em;
+        line-height: 1.5;
+        text-align: left; /* Align text to the left on smaller screens */
+    }
+
+    li {
+        font-size: 1.1em; /* Ensure list font size matches paragraph font size */
+        line-height: 1.5;
+        text-align: left; /* Align list items to the left */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .content-wrapper {
+        padding: 10px;
+    }
+
+    header img {
+        width: 100px; /* Further reduce logo size */
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 15px 0;
     }
 
     h2 {
         font-size: 1.3em;
     }
-}
 
-@media only screen and (max-width: 480px) {
-    .content-wrapper {
-        padding: 10px;
+    .blurred-title {
+        font-size: 1.8em; /* Adjust title size for smaller screens */
+        width: 90%; /* Ensure it fits comfortably */
+        padding: 0 10px;
     }
 
-    h1 {
-        font-size: 1.5em;
+    p {
+        font-size: 1em;
+        line-height: 1.4;
+        text-align: left; /* Align text to the left for very small screens */
     }
 
-    h2 {
-        font-size: 1.2em;
+    li {
+        font-size: 1em; /* Match list font size with paragraph */
+        line-height: 1.4;
+        text-align: left; /* Align list items to the left */
     }
 }
