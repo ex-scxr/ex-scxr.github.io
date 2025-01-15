@@ -16,6 +16,8 @@ We want to deliver the best UX through the base layer while preserving decentral
 
 In this series, we'll explain what **Preconfirmation** means for Ethereum users, validators, and applications (Based Rollups included), and explore what needs to happen to maximize its UX benefits.
 
+___
+
 ## To The User
 Without technical jargon, this is what may happen:
 1. You may use a preconf-enabled wallet that integrates at least one preconf gateway.
@@ -25,9 +27,11 @@ Without technical jargon, this is what may happen:
 5. In a future slot, the gateway finds the validator to include your transaction (by enforcing builders).
 6. If your transactions end up not included, some validator will get slashed.
 
-![]({{'assets/images/preconfs/GgczPnAa4AAclnF.jpg' | relative_url}}) Preconfirmations give an extra time variable in how transactions are priced. You can still pay the standard base fee + tip if you don't mind waiting for L1 blocktime, or you can tip extra for delivery insurance and fast confirmation. Note that this is only an insurance. It does not mean that your transaction is already on-chain. 
+![]({{'assets/images/preconfs/GgczPnAa4AAclnF.jpg' | relative_url}}) **Preconfirmations** give an extra time variable in how transactions are priced. You can still pay the standard base fee + tip if you don't mind waiting for L1 blocktime, or you can tip extra for delivery insurance and fast confirmation. Note that this is only an insurance. It does not mean that your transaction is already on-chain. 
 
 Insurance is backed by economic security, meaning the insurers, in our case the gateway and validators (or whatever protocol sitting in between), put down substantial collaterals to pledge for the results. This also means the users of preconfirmation are taking the cascading risks.
+
+___
 
 ## How much will you pay?
 Currently, only **Inclusion Preconf** exists, which means the gateway can only guarantee the inclusion of transactions. A more advanced type called **Execution Preconf** could have greater significance, especially for certain applications. With **Execution Preconf**, if you're swapping tokens, you are promised the pool's outcome, including price and amount with slippage—not just confirmation that your swap was included **(which could still fail)**. This sophisticated version is more difficult to price and will cost more.
@@ -39,6 +43,8 @@ For simplicity, we only discuss the pricing of Inclusion Preconf. <a href="https
 * **15 GWEI** when the existing preconfirmation = **30M gas**
 
 ![]({{'assets/images/preconfs/Ggc0qDFasAATCDW.jpg' | relative_url}})
+
+___
 
 ## What else on UX?
 A huge bull case on the front end is new wallet features. Let’s think big and speak with very utopian terms - a wallet may offer users $5.99/mo for instant confirmation of all transactions, and an upgraded plan of $9.99/mo for swapping with superior slippage control. Furthermore, with Account Abstraction, you can spend all your tokens without an extra step of approval, and perhaps get your gas fees sponsored for $15.99/mo.
@@ -62,6 +68,8 @@ This scenario is <a href="https://research.chainbound.io/integrating-account-abs
 3. **Provide instant preconfimation to users.**
 
 This is an enabler of the economics of scale and a definitive upgrade on Ethereum UX.
+
+___
 
 ## Summary
 **Preconfirmation is nothing fancy**, it's akin to a bridge directly from users to Ethereum validators. As this ecosystem matures, wallets would sit on proposer commitments to serve what you need, rather than selling bundles that potentially rip you off. 
