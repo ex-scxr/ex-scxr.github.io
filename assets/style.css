@@ -1,5 +1,34 @@
+@font-face {
+    font-family: 'prime';
+    src: url('./fonts/CourierPrime-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal weight */
+    font-style: normal; /* Regular style */
+}
+
+@font-face {
+    font-family: 'prime';
+    src: url('./fonts/CourierPrime-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+    font-style: normal; /* Regular style */
+}
+
+@font-face {
+    font-family: 'prime';
+    src: url('./fonts/CourierPrime-Italic.ttf') format('truetype');
+    font-weight: 400; /* Normal weight */
+    font-style: italic; /* Italic style */
+}
+
+@font-face {
+    font-family: 'prime';
+    src: url('./fonts/CourierPrime-BoldItalic.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+    font-style: italic; /* Italic style */
+}
+
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: prime;
     background-color: #ffffff;
     color: #0C101B;
     margin: 0;
