@@ -4,7 +4,7 @@ title: ⚡️ Preconfirmations for the Average Joe
 permalink: /research/preconfs/
 ---
 <div class="title-container">
-    <h1 class="title">{{ page.title }} ⚡️</h1>
+    <h1 class="title">{{ page.title }}</h1>
 </div>
 
 #### Written by:**[Cecilia Zhang](https://x.com/ceciliaz030)**
