@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Preconfirmations for the Average Joe
+title: ⚡️ Preconfirmations for the Average Joe
 permalink: /research/preconfs/
 ---
 <div class="title-container">
